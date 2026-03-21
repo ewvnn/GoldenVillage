@@ -1,17 +1,6 @@
-"""
-Golden Village — Analytics Master Runner
-=========================================
-Runs both the occupancy analytics and customer clustering
-pipelines in sequence.
 
-Usage:
-    python gv_analytics_main.py
-
-Modules:
-    gv_occupancy_analytics.py  — screening scheduling optimisation
-    gv_customer_clustering.py  — customer segmentation for marketing
-"""
-
+# Golden Village — Analytics Master Runner
+## =========================================
 from gv_occupancy_analytics  import run_occupancy_analysis
 from gv_customer_clustering  import run_customer_clustering
 
@@ -28,9 +17,9 @@ if __name__ == "__main__":
     # or leave as None to auto-detect via silhouette scoring.
     segments_df, cluster_profile = run_customer_clustering(optimal_k=5)
 
-    print("\n\n" + "═" * 60)
+    # print("\n\n" + "═" * 60)
     print("  ALL PIPELINES COMPLETE")
-    print("  Outputs:")
-    print("    • gv_customer_segments.csv  (CRM upload-ready)")
-    print("    • Charts rendered inline")
-    print("═" * 60)
+    # print("  Outputs:")
+    # print("    • gv_customer_segments.csv  (CRM upload-ready)")
+    # print("    • Charts rendered inline")
+    # print("═" * 60)
