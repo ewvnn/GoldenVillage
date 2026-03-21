@@ -69,116 +69,6 @@ df_raw = pd.read_csv("data/gv_customers.csv")
 
 
 # ─────────────────────────────────────────────
-# 1.  SYNTHETIC CUSTOMER DATA GENERATOR
-#     Replace with your actual CRM / loyalty DB
-# ─────────────────────────────────────────────
-# def generate_customer_data(n_users: int = N_USERS) -> pd.DataFrame:
-#     """
-#     Simulate per-customer behavioural features.
-
-#     Real usage — connect to your CRM / data warehouse:
-#         df = pd.read_sql('''
-#             SELECT
-#                 customer_id,
-#                 MAX(booking_date)   AS last_visit_date,
-#                 COUNT(*)            AS total_visits,
-#                 SUM(total_spend)    AS total_spend,
-#                 AVG(ticket_price)   AS avg_ticket_price,
-#                 ...
-#             FROM gv_bookings
-#             GROUP BY customer_id
-#         ''', con=engine)
-
-#     Expected schema (minimum):
-#         customer_id       : str / int
-#         last_visit_date   : datetime
-#         total_visits      : int
-#         total_spend       : float
-#         avg_ticket_price  : float
-#         pct_weekend_visits: float   (0–1)
-#         pct_evening_visits: float   (0–1)
-#         favourite_genre   : str
-#         preferred_location: str
-#         gv_plus_member    : bool
-#     """
-#     user_ids = [f"GV{str(i).zfill(6)}" for i in range(1, n_users + 1)]
-
-#     # --- synthetic segment seeds (5 latent groups) ---
-#     segments = rng.choice(5, size=n_users, p=[0.25, 0.20, 0.30, 0.10, 0.15])
-#     data = []
-
-#     for uid, seg in zip(user_ids, segments):
-#         if seg == 0:   # Blockbuster Weekend Warriors
-#             visits   = int(rng.integers(18, 40))
-#             spend    = visits * rng.uniform(22, 35)
-#             recency  = int(rng.integers(1, 30))
-#             pct_wknd = rng.uniform(0.70, 1.0)
-#             pct_eve  = rng.uniform(0.65, 1.0)
-#             avg_px   = spend / visits
-#             fav_genre = rng.choice(["Action", "Thriller", "Sci-Fi"])
-#             gv_plus  = rng.random() < 0.75
-
-#         elif seg == 1: # Family Matinee Regulars
-#             visits   = int(rng.integers(8, 20))
-#             spend    = visits * rng.uniform(55, 90)   # pays for family
-#             recency  = int(rng.integers(10, 60))
-#             pct_wknd = rng.uniform(0.60, 0.90)
-#             pct_eve  = rng.uniform(0.10, 0.40)        # daytime
-#             avg_px   = spend / visits
-#             fav_genre = rng.choice(["Animation", "Comedy", "Romance"])
-#             gv_plus  = rng.random() < 0.55
-
-#         elif seg == 2: # Casual Occasionals
-#             visits   = int(rng.integers(1, 7))
-#             spend    = visits * rng.uniform(12, 20)
-#             recency  = int(rng.integers(60, 200))
-#             pct_wknd = rng.uniform(0.30, 0.70)
-#             pct_eve  = rng.uniform(0.30, 0.70)
-#             avg_px   = spend / visits
-#             fav_genre = rng.choice(GENRES)
-#             gv_plus  = rng.random() < 0.15
-
-#         elif seg == 3: # Premium Experience Seekers
-#             visits   = int(rng.integers(4, 12))
-#             spend    = visits * rng.uniform(45, 80)   # premium seats / F&B
-#             recency  = int(rng.integers(5, 45))
-#             pct_wknd = rng.uniform(0.40, 0.70)
-#             pct_eve  = rng.uniform(0.55, 0.90)
-#             avg_px   = spend / visits
-#             fav_genre = rng.choice(["Drama", "Thriller", "Action"])
-#             gv_plus  = rng.random() < 0.90
-
-#         else:          # Lapsed Loyalists
-#             visits   = int(rng.integers(5, 15))
-#             spend    = visits * rng.uniform(15, 30)
-#             recency  = int(rng.integers(150, 365))
-#             pct_wknd = rng.uniform(0.40, 0.80)
-#             pct_eve  = rng.uniform(0.40, 0.80)
-#             avg_px   = spend / visits
-#             fav_genre = rng.choice(GENRES)
-#             gv_plus  = rng.random() < 0.45
-
-#         last_visit = SNAPSHOT_DATE - pd.Timedelta(days=recency)
-#         data.append({
-#             "customer_id":        uid,
-#             "last_visit_date":    last_visit,
-#             "recency_days":       recency,
-#             "total_visits":       visits,
-#             "total_spend":        round(spend, 2),
-#             "avg_ticket_price":   round(avg_px, 2),
-#             "pct_weekend_visits": round(pct_wknd, 3),
-#             "pct_evening_visits": round(pct_eve, 3),
-#             "favourite_genre":    fav_genre,
-#             "preferred_location": rng.choice(LOCATIONS),
-#             "gv_plus_member":     int(gv_plus),
-#             "_true_segment":      seg   # ground-truth (remove in production)
-#         })
-
-#     return pd.DataFrame(data)
-
-
-
-# ─────────────────────────────────────────────
 # 2.  FEATURE ENGINEERING
 # ─────────────────────────────────────────────
 def build_feature_matrix(df: pd.DataFrame) -> pd.DataFrame:
@@ -448,7 +338,7 @@ def plot_segment_distribution(df: pd.DataFrame, save_path: str = None):
 # ─────────────────────────────────────────────
 # 7.  EXPORT HELPER
 # ─────────────────────────────────────────────
-def export_segments(df: pd.DataFrame, path: str = "gv_customer_segments.csv"):
+def export_segments(df: pd.DataFrame, path: str = "data/gv_customer_segments.csv"):
     """
     Export customer_id + persona + key features to CSV for
     upload into CRM / marketing automation platform.
@@ -526,7 +416,7 @@ def run_customer_clustering(optimal_k: int = None):
     marketing_playbook(profile)
 
     # ── 9. Export ─────────────────────────────────────────────
-    export_segments(df_clustered, "gv_customer_segments.csv")
+    export_segments(df_clustered, "data/gv_customer_segments.csv")
 
     print("\n✅  Clustering complete.")
     return df_clustered, profile

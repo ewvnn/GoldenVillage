@@ -51,75 +51,9 @@ CAPACITY_MAP = {          # seats per hall (location-level average)
     "Bishan": 190,  "Kallang Leisure Park": 175
 }
 
-# ─────────────────────────────────────────────
-# 1.  SYNTHETIC DATA GENERATOR
-#     Replace generate_booking_data() with a
-#     function that reads your actual database.
-# ─────────────────────────────────────────────
+
 ## import booking data from CSV
 df = pd.read_csv("data/gv_bookings.csv", parse_dates=["screening_date"])
-
-
-
-
-# def generate_booking_data(n_records: int = 50_000) -> pd.DataFrame:
-#     """
-#     Simulate 12 months of screening-level booking records.
-
-#     Real usage:
-#         df = pd.read_csv("gv_bookings.csv", parse_dates=["screening_date"])
-#         # OR connect to your DB / data warehouse here
-
-#     Expected schema (minimum required columns):
-#         screening_date  : datetime
-#         location        : str
-#         time_slot       : str   (e.g. "20:00")
-#         day_of_week     : str   (e.g. "Fri")
-#         genre           : str
-#         seats_sold      : int
-#         capacity        : int
-#         ticket_price    : float
-#     """
-#     dates = pd.date_range("2024-01-01", "2024-12-31", freq="D")
-
-#     records = []
-#     for _ in range(n_records):
-#         loc   = rng.choice(LOCATIONS)
-#         date  = pd.Timestamp(rng.choice(dates))
-#         dow   = DAYS_OF_WEEK[date.dayofweek]
-#         slot  = rng.choice(TIME_SLOTS)
-#         genre = rng.choice(GENRES)
-#         cap   = CAPACITY_MAP[loc]
-
-#         # Realistic occupancy patterns
-#         base = 0.45
-#         if dow in ["Fri", "Sat", "Sun"]:   base += 0.22   # weekend boost
-#         if slot in ["20:00", "22:00"]:     base += 0.18   # prime evening
-#         if slot in ["10:00", "12:00"]:     base -= 0.15   # morning dip
-#         if genre in ["Action", "Animation"]: base += 0.08
-#         if genre == "Drama":               base -= 0.06
-#         base += rng.normal(0, 0.08)          # noise
-
-#         occ_rate  = float(np.clip(base, 0.05, 1.0))
-#         seats_sold = int(cap * occ_rate)
-#         price      = rng.choice([13.50, 15.00, 16.50, 19.00, 22.00])
-
-#         records.append({
-#             "screening_date": date,
-#             "location":       loc,
-#             "time_slot":      slot,
-#             "day_of_week":    dow,
-#             "month":          date.month,
-#             "genre":          genre,
-#             "seats_sold":     seats_sold,
-#             "capacity":       cap,
-#             "ticket_price":   price,
-#             "revenue":        seats_sold * price
-#         })
-
-#     df = pd.DataFrame(records)
-#     df["occupancy_rate"] = df["seats_sold"] / df["capacity"]
-#     return df
 
 
 # ─────────────────────────────────────────────
