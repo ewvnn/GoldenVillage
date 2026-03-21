@@ -1,0 +1,112 @@
+movie_id,title,genre,rating,duration_mins,release_date,language,distributor,budget_sgd_m
+MOV0001,Steel Storm,Action,NC16,154,2024-02-02,Korean,GV Films,9.3
+MOV0002,Iron Vanguard,Action,M18,151,2024-09-11,Malay,Warner Bros SEA,12.0
+MOV0003,Last Operative,Action,PG13,125,2024-11-02,Japanese,Warner Bros SEA,66.2
+MOV0004,Rogue Protocol,Action,NC16,125,2024-08-23,Mandarin,Shaw Distribution,7.0
+MOV0005,Titanfall Rising,Action,NC16,159,2024-11-09,Tamil,Sony Pictures SEA,77.7
+MOV0006,Red Horizon,Action,M18,146,2024-05-09,English,Warner Bros SEA,38.4
+MOV0007,Zero Hour Strike,Action,PG13,88,2024-06-30,Mandarin,Indie SG,77.5
+MOV0008,Shadow Breach,Action,PG13,166,2024-09-28,English,Cathay Asia,16.8
+MOV0009,Dark Sentinel,Action,NC16,96,2024-06-17,English,Universal SEA,36.1
+MOV0010,Final Countdown,Action,M18,141,2024-09-01,English,Sony Pictures SEA,66.9
+MOV0011,Operation Blackout,Action,PG13,157,2024-06-07,English,Shaw Distribution,12.9
+MOV0012,Overdrive,Action,PG13,157,2024-09-06,Malay,GV Films,53.9
+MOV0013,Code Nemesis,Action,NC16,148,2024-06-21,English,Universal SEA,12.9
+MOV0014,Thunder Legion,Action,PG13,124,2024-07-26,English,Sony Pictures SEA,46.1
+MOV0015,Alpha Strike,Action,NC16,153,2024-01-29,Mandarin,GV Films,25.7
+MOV0016,Night Pursuit,Action,PG,116,2024-07-23,English,Disney SEA,33.9
+MOV0017,Classified,Action,PG13,161,2024-12-28,English,Warner Bros SEA,24.9
+MOV0018,Ghost Protocol 2,Action,NC16,96,2024-04-12,Malay,Universal SEA,53.8
+MOV0019,Killswitch,Action,M18,121,2024-05-29,English,Cathay Asia,9.0
+MOV0020,Delta Force Rising,Action,NC16,147,2024-01-09,English,Disney SEA,41.1
+MOV0021,Always You,Romance,PG13,98,2024-12-08,English,Shaw Distribution,25.5
+MOV0022,Second Chances,Romance,PG13,139,2024-05-19,English,Cathay Asia,11.2
+MOV0023,Rainy Season,Romance,NC16,171,2024-05-03,Mandarin,Disney SEA,77.6
+MOV0024,Love in Transit,Romance,NC16,108,2024-04-07,English,Sony Pictures SEA,23.2
+MOV0025,The Promise,Romance,NC16,93,2024-01-29,English,Sony Pictures SEA,25.9
+MOV0026,Between Us,Romance,PG13,134,2024-03-14,Korean,Shaw Distribution,61.2
+MOV0027,Chasing Sunsets,Romance,PG13,149,2024-06-28,Mandarin,Shaw Distribution,52.7
+MOV0028,Letters to Her,Romance,PG,153,2024-08-01,English,Disney SEA,40.5
+MOV0029,One More Chance,Romance,PG,114,2024-03-09,English,Shaw Distribution,15.3
+MOV0030,A Perfect Lie,Romance,NC16,174,2024-08-02,English,Universal SEA,48.1
+MOV0031,Before Sunrise Again,Romance,M18,87,2024-04-17,English,Disney SEA,8.5
+MOV0032,Our Little Secret,Romance,PG13,145,2024-10-12,Japanese,Disney SEA,46.6
+MOV0033,Still,Romance,PG13,127,2024-07-16,English,Universal SEA,36.2
+MOV0034,Unspoken,Romance,G,117,2024-07-09,Korean,Warner Bros SEA,12.9
+MOV0035,Forever After,Romance,PG,134,2024-04-20,Mandarin,GV Films,53.4
+MOV0036,The Hollow,Horror,M18,169,2024-04-12,English,Warner Bros SEA,73.4
+MOV0037,Nightwatch,Horror,PG13,105,2024-12-21,Mandarin,Universal SEA,66.7
+MOV0038,Beneath the Floor,Horror,M18,171,2024-05-15,Japanese,Cathay Asia,24.7
+MOV0039,Sleepless,Horror,NC16,131,2024-08-14,Japanese,Shaw Distribution,5.5
+MOV0040,The Entity Returns,Horror,NC16,172,2024-03-01,Korean,Indie SG,60.4
+MOV0041,Dusk,Horror,M18,165,2024-11-04,English,Disney SEA,62.2
+MOV0042,Haunted Frequency,Horror,M18,121,2024-04-25,English,Cathay Asia,60.2
+MOV0043,The Last Rite,Horror,M18,108,2024-05-18,English,GV Films,66.8
+MOV0044,Something in the Dark,Horror,NC16,152,2024-02-14,Mandarin,Shaw Distribution,70.2
+MOV0045,Withered,Horror,NC16,102,2024-01-17,Malay,Cathay Asia,41.1
+MOV0046,The Visitor,Horror,NC16,169,2024-12-20,English,GV Films,12.3
+MOV0047,Cold Sweat,Horror,NC16,145,2024-01-07,English,Indie SG,47.3
+MOV0048,Possession,Horror,NC16,162,2024-09-10,Tamil,Warner Bros SEA,59.6
+MOV0049,Unseen,Horror,NC16,96,2024-10-28,Japanese,GV Films,25.5
+MOV0050,The Basement,Horror,NC16,130,2024-05-25,Japanese,Sony Pictures SEA,24.3
+MOV0051,Cosmic Pals,Animation,G,168,2024-12-16,Mandarin,Shaw Distribution,10.3
+MOV0052,Little Dragon Academy,Animation,G,152,2024-08-19,Japanese,Disney SEA,48.5
+MOV0053,The Great Reef,Animation,PG13,168,2024-03-07,English,Sony Pictures SEA,3.4
+MOV0054,Skybound,Animation,G,110,2024-10-13,Malay,Warner Bros SEA,20.1
+MOV0055,Panda Troopers,Animation,PG,132,2024-05-01,Korean,Warner Bros SEA,34.2
+MOV0056,Robot Puppy,Animation,PG,168,2024-08-08,Mandarin,Disney SEA,69.7
+MOV0057,Magic Garden 2,Animation,G,125,2024-04-10,English,Indie SG,65.7
+MOV0058,Ocean Friends,Animation,G,164,2024-09-29,Mandarin,GV Films,13.4
+MOV0059,Cloud Kingdom,Animation,PG,159,2024-03-11,English,Indie SG,14.9
+MOV0060,The Tiny Giants,Animation,G,136,2024-12-02,English,Shaw Distribution,3.6
+MOV0061,Star Critters,Animation,G,89,2024-09-15,English,Disney SEA,55.1
+MOV0062,Jumbo and Friends,Animation,PG,159,2024-08-03,English,Cathay Asia,70.3
+MOV0063,Zap & Zoom,Animation,G,161,2024-10-16,English,Indie SG,21.5
+MOV0064,Blackout,Thriller,NC16,170,2024-03-27,English,Disney SEA,31.1
+MOV0065,The Setup,Thriller,PG13,132,2024-12-03,Korean,GV Films,74.1
+MOV0066,False Identity,Thriller,PG13,160,2024-01-19,Korean,Warner Bros SEA,78.4
+MOV0067,Missing Persons,Thriller,M18,157,2024-04-27,Mandarin,Universal SEA,12.5
+MOV0068,Conspiracy,Thriller,NC16,114,2024-10-11,Korean,Universal SEA,38.1
+MOV0069,The Informant,Thriller,NC16,119,2024-10-13,English,GV Films,39.3
+MOV0070,Trust No One,Thriller,NC16,139,2024-02-21,English,Shaw Distribution,30.6
+MOV0071,Loose End,Thriller,NC16,114,2024-09-25,Mandarin,Shaw Distribution,76.0
+MOV0072,Evidence,Thriller,M18,161,2024-04-18,English,Disney SEA,43.8
+MOV0073,Double Cross,Thriller,NC16,161,2024-12-16,Malay,Universal SEA,51.4
+MOV0074,The Witness,Thriller,PG13,100,2024-07-13,English,Sony Pictures SEA,56.2
+MOV0075,Deception,Thriller,PG13,162,2024-07-02,Mandarin,Sony Pictures SEA,58.6
+MOV0076,Weekend Disaster,Comedy,PG,132,2024-02-04,English,Indie SG,76.8
+MOV0077,Totally Normal Family,Comedy,PG13,157,2024-03-02,Malay,Indie SG,75.8
+MOV0078,My Boss is Crazy,Comedy,PG,149,2024-10-17,English,Universal SEA,50.1
+MOV0079,Road Trippin',Comedy,PG13,100,2024-03-02,Mandarin,Disney SEA,42.8
+MOV0080,Five Weddings,Comedy,PG13,167,2024-06-19,English,Warner Bros SEA,48.8
+MOV0081,The Accident,Comedy,PG,168,2024-02-20,English,Sony Pictures SEA,53.3
+MOV0082,Oops!,Comedy,PG13,167,2024-02-02,Mandarin,Warner Bros SEA,28.0
+MOV0083,New Neighbours,Comedy,PG13,165,2024-09-26,English,Warner Bros SEA,26.5
+MOV0084,Date Night Gone Wrong,Comedy,PG,171,2024-05-12,Japanese,Shaw Distribution,36.2
+MOV0085,Chaos & Order,Comedy,PG13,119,2024-09-26,Mandarin,Indie SG,62.9
+MOV0086,The Promotion,Comedy,PG13,97,2024-12-07,Japanese,Disney SEA,58.0
+MOV0087,Backfire,Comedy,PG,170,2024-11-04,Korean,Indie SG,11.5
+MOV0088,The Bridge,Drama,NC16,87,2024-08-20,English,Sony Pictures SEA,37.4
+MOV0089,Inheritance,Drama,PG13,159,2024-09-20,English,Cathay Asia,25.6
+MOV0090,Broken Seasons,Drama,M18,151,2024-06-10,English,Warner Bros SEA,79.8
+MOV0091,Parallel Lives,Drama,PG13,164,2024-01-17,Korean,GV Films,79.9
+MOV0092,The Decision,Drama,NC16,97,2024-02-08,English,Sony Pictures SEA,72.0
+MOV0093,Quiet Storm,Drama,PG13,87,2024-11-11,English,Warner Bros SEA,17.5
+MOV0094,Echoes,Drama,M18,111,2024-10-10,English,Sony Pictures SEA,2.4
+MOV0095,Home Again,Drama,NC16,89,2024-02-27,Malay,Indie SG,68.3
+MOV0096,When It Rains,Drama,PG,145,2024-03-28,Japanese,Warner Bros SEA,62.2
+MOV0097,The Reckoning,Drama,NC16,147,2024-11-04,English,Disney SEA,11.7
+MOV0098,Aftermath,Drama,NC16,133,2024-03-14,Mandarin,Sony Pictures SEA,68.4
+MOV0099,Forgiven,Drama,NC16,98,2024-06-12,English,GV Films,57.4
+MOV0100,Exo-Planet,Sci-Fi,M18,152,2024-04-08,English,Universal SEA,50.1
+MOV0101,Singularity,Sci-Fi,M18,88,2024-01-02,Tamil,Disney SEA,9.2
+MOV0102,Void Walker,Sci-Fi,PG13,118,2024-03-04,English,Indie SG,63.2
+MOV0103,Parallel Earth,Sci-Fi,NC16,142,2024-04-02,English,Shaw Distribution,25.5
+MOV0104,Genesis Protocol,Sci-Fi,NC16,133,2024-12-11,Mandarin,Sony Pictures SEA,75.4
+MOV0105,The Last Transmission,Sci-Fi,NC16,98,2024-02-27,English,Indie SG,11.3
+MOV0106,Omega Station,Sci-Fi,PG13,170,2024-06-22,English,Cathay Asia,35.4
+MOV0107,Neural Link,Sci-Fi,NC16,139,2024-10-13,English,Shaw Distribution,19.0
+MOV0108,Beyond the Belt,Sci-Fi,NC16,139,2024-05-29,English,Cathay Asia,34.6
+MOV0109,Exodus Colony,Sci-Fi,PG13,127,2024-06-23,Mandarin,Cathay Asia,56.8
+MOV0110,AI Rising,Sci-Fi,NC16,137,2024-07-25,English,Sony Pictures SEA,63.4
+MOV0111,Quantum Breach,Sci-Fi,NC16,134,2024-05-05,Mandarin,Universal SEA,42.0
