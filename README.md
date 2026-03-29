@@ -1,7 +1,8 @@
 # GoldenVillage
 Digital Transformation for Golden Village
 
-This interactive dashboard as a proof of concept for Golden Village's Analytics as a portion of our <i>IS215: Digital Business Transformation and Technologies</i> project. This data and insights from this dashboard is used by key stakeholders to identify customer segments and to maximise Golden Village's business value. This also contributes to Golden Village's new development as a data-driven culture.
+This interactive dashboard acts as a proof of concept for Golden Village's Analytics as a portion of our <i>IS215: Digital Business Transformation and Technologies</i> project. 
+This data and insights from this dashboard is used by key stakeholders to identify customer segments and to maximise Golden Village's business value. This also contributes to Golden Village's new development as an organization with a data-driven culture and identity.
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://goldenvillage.streamlit.app/)
 
