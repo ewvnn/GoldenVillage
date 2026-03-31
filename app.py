@@ -108,8 +108,8 @@ def load_data():
     """
     try:
         movies_df    = pd.read_csv("data/gv_movies.csv")
-        customers_df = pd.read_csv("data/gv_customers_v3.csv")
-        bookings_df  = pd.read_csv("data/gv_bookings.csv", parse_dates=["screening_date"])
+        customers_df = pd.read_csv("data/gv_customers_set1.csv")
+        bookings_df  = pd.read_csv("data/gv_bookings_set1.csv", parse_dates=["screening_date"])
 
         # Derive occupancy_rate if not already present
         if "occupancy_rate" not in bookings_df.columns:

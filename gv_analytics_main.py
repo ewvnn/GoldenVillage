@@ -2,7 +2,7 @@
 # Golden Village — Analytics Master Runner
 ## =========================================
 # from archives.gv_occupancy_analytics  import run_occupancy_analysis
-from gv_occupancy_analytics_v3  import run_occupancy_analysis
+from gv_occupancy_analytics  import run_occupancy_analysis
 from gv_customer_clustering  import run_customer_clustering
 
 if __name__ == "__main__":

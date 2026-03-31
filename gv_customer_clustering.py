@@ -64,7 +64,7 @@ PERSONA_COLOURS = {
 }
 
 ## import CSV Data
-df_raw = pd.read_csv("data/gv_customers_v3.csv")
+df_raw = pd.read_csv("data/gv_customers_set1.csv")
 
 
 
